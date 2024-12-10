@@ -1,0 +1,47 @@
+[
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you", "Hi bot", "Hello Pro Bot"],
+        "responses": ["Hello! How can I assist you with programming today?", "Hi there! Ready to dive into Python?", "Hey! What programming questions can I answer for you today?"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Take care", "I'm leaving"],
+        "responses": ["Goodbye! Keep coding!", "See you later! Happy programming!", "Goodbye! Remember to practice regularly!"]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it", "Thanks, Pro Bot"],
+        "responses": ["You're welcome! Keep up the great work!", "No problem! Happy to help you learn!", "You're welcome! Let me know if you have more questions."]
+    },
+    {
+        "tag": "about",
+        "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose", "Tell me about yourself"],
+        "responses": ["I am Pro Bot, your programming assistant! I can teach Python syntax, explain algorithms, and provide programming tips.", "My purpose is to help you learn programming effectively and efficiently.", "I am here to assist you with Python, logic building, and more!"]
+    },
+    {
+        "tag": "python_variables",
+        "patterns": ["What are variables in Python", "How to declare a variable in Python", "Tell me about Python variables"],
+        "responses": ["Variables in Python are used to store data values. You can declare a variable like this:\n\n```python\nx = 10\nname = 'Alice'\nis_active = True\n```\nPython is dynamically typed, so you don't need to specify the type explicitly."]
+    },
+    {
+        "tag": "python_loops",
+        "patterns": ["Explain Python loops", "How do loops work in Python", "What are Python loops"],
+        "responses": ["Python has two main types of loops: `for` and `while`. Here's how they work:\n\n**For Loop:**\n```python\nfor i in range(5):\n    print(i)\n```\n\n**While Loop:**\n```python\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1\n```"]
+    },
+    {
+        "tag": "python_functions",
+        "patterns": ["What are functions in Python", "How to define a function in Python", "Explain Python functions"],
+        "responses": ["Functions in Python are blocks of code designed to perform a specific task. Here's how you define a function:\n\n```python\ndef greet(name):\n    print(f'Hello, {name}!')\n\ngreet('Alice')\n```\nFunctions can accept parameters and return values."]
+    },
+    {
+        "tag": "python_conditions",
+        "patterns": ["Explain Python conditions", "What are conditions in Python", "How to use if statements in Python"],
+        "responses": ["Python conditions allow you to execute certain code based on whether a condition is true or false. Example:\n\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n    print('x is equal to 5')\nelse:\n    print('x is less than 5')\n```"]
+    },
+    {
+        "tag": "python_classes",
+        "patterns": ["What are classes in Python", "Explain Python classes", "How to create a class in Python"],
+        "responses": ["Classes in Python allow you to implement Object-Oriented Programming (OOP). Example:\n\n```python\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        print(f'Hi, my name is {self.name} and I am {self.age} years old.')\n\np = Person('Alice', 30)\np.greet()\n```"]
+    }
+]
