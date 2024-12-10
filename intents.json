@@ -1,47 +1,87 @@
 [
     {
         "tag": "greeting",
-        "patterns": ["Hi", "Hello", "Hey", "How are you", "Hi bot", "Hello Pro Bot"],
-        "responses": ["Hello! How can I assist you with programming today?", "Hi there! Ready to dive into Python?", "Hey! What programming questions can I answer for you today?"]
+        "patterns": ["Hi", "Hello", "Hey", "How are you", "What's up", "Good morning"],
+        "responses": ["Hello! How can I assist you with your programming questions today?", "Hi there! What programming topic do you need help with?", "Hey! How can I help you today with coding?", "Good morning! Ready to learn some programming?"]
     },
     {
         "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye", "Take care", "I'm leaving"],
-        "responses": ["Goodbye! Keep coding!", "See you later! Happy programming!", "Goodbye! Remember to practice regularly!"]
+        "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later"],
+        "responses": ["Goodbye! Happy coding!", "See you later! Keep coding!", "Goodbye! Let me know if you have more questions!", "Catch you later! Happy programming!"]
     },
     {
         "tag": "thanks",
-        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it", "Thanks, Pro Bot"],
-        "responses": ["You're welcome! Keep up the great work!", "No problem! Happy to help you learn!", "You're welcome! Let me know if you have more questions."]
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it", "Much appreciated"],
+        "responses": ["You're welcome! Keep up the great work!", "No problem! I'm glad I could help!", "You're welcome! Enjoy coding!", "Happy to help! Keep learning!"]
     },
     {
         "tag": "about",
-        "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose", "Tell me about yourself"],
-        "responses": ["I am Pro Bot, your programming assistant! I can teach Python syntax, explain algorithms, and provide programming tips.", "My purpose is to help you learn programming effectively and efficiently.", "I am here to assist you with Python, logic building, and more!"]
+        "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose", "What is your function"],
+        "responses": ["I am a programming assistant bot designed to help you with Python, algorithms, and coding concepts.", "My purpose is to assist you in learning programming languages like Python, explaining coding concepts, and providing code examples."]
     },
     {
-        "tag": "python_variables",
-        "patterns": ["What are variables in Python", "How to declare a variable in Python", "Tell me about Python variables"],
-        "responses": ["Variables in Python are used to store data values. You can declare a variable like this:\n\n```python\nx = 10\nname = 'Alice'\nis_active = True\n```\nPython is dynamically typed, so you don't need to specify the type explicitly."]
+        "tag": "python_syntax",
+        "patterns": ["Tell me about Python syntax", "What is Python syntax", "How do I write Python code", "Explain Python syntax"],
+        "responses": ["Python syntax is the set of rules that defines the structure of Python code. For example, variables are defined as 'x = 10', and indentation is important for defining blocks of code."]
     },
     {
-        "tag": "python_loops",
-        "patterns": ["Explain Python loops", "How do loops work in Python", "What are Python loops"],
-        "responses": ["Python has two main types of loops: `for` and `while`. Here's how they work:\n\n**For Loop:**\n```python\nfor i in range(5):\n    print(i)\n```\n\n**While Loop:**\n```python\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1\n```"]
+        "tag": "variables",
+        "patterns": ["What are variables in Python", "Explain variables", "How do I use variables in Python"],
+        "responses": ["In Python, a variable is used to store data. You can create a variable by assigning a value to a name, like 'x = 10'. Variables can store different types of data, like integers, floats, or strings."]
     },
     {
-        "tag": "python_functions",
-        "patterns": ["What are functions in Python", "How to define a function in Python", "Explain Python functions"],
-        "responses": ["Functions in Python are blocks of code designed to perform a specific task. Here's how you define a function:\n\n```python\ndef greet(name):\n    print(f'Hello, {name}!')\n\ngreet('Alice')\n```\nFunctions can accept parameters and return values."]
+        "tag": "loops",
+        "patterns": ["What are loops", "Explain loops", "How do I write a loop in Python", "What are for loops and while loops"],
+        "responses": ["Loops are used to repeat a block of code multiple times. In Python, you can use 'for' and 'while' loops. For example:\n'for i in range(5):\n    print(i)'\nOr a while loop like:\n'while x < 5:\n    print(x)\n    x += 1'"]
     },
     {
-        "tag": "python_conditions",
-        "patterns": ["Explain Python conditions", "What are conditions in Python", "How to use if statements in Python"],
-        "responses": ["Python conditions allow you to execute certain code based on whether a condition is true or false. Example:\n\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n    print('x is equal to 5')\nelse:\n    print('x is less than 5')\n```"]
+        "tag": "functions",
+        "patterns": ["What are functions", "Explain functions", "How do I define a function in Python", "Tell me about functions in Python"],
+        "responses": ["Functions in Python are defined using the 'def' keyword. For example:\n'def my_function():\n    print('Hello, World!')'. You can then call the function by its name, like 'my_function()'."]
     },
     {
-        "tag": "python_classes",
-        "patterns": ["What are classes in Python", "Explain Python classes", "How to create a class in Python"],
-        "responses": ["Classes in Python allow you to implement Object-Oriented Programming (OOP). Example:\n\n```python\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        print(f'Hi, my name is {self.name} and I am {self.age} years old.')\n\np = Person('Alice', 30)\np.greet()\n```"]
+        "tag": "conditions",
+        "patterns": ["What are conditions in Python", "How do I use if-else in Python", "Tell me about if-else statements", "Explain conditions in Python"],
+        "responses": ["Conditions in Python are used to make decisions in code. The 'if' statement is used to check if a condition is true, and 'else' can be used for the opposite case. For example:\n'if x > 10:\n    print('x is greater than 10')\nelse:\n    print('x is 10 or less')'"]
+    },
+    {
+        "tag": "classes",
+        "patterns": ["What are classes", "Explain classes in Python", "How do I define a class in Python", "Tell me about object-oriented programming in Python"],
+        "responses": ["Classes in Python are used to define objects that encapsulate data and methods. A class is defined with the 'class' keyword. For example:\n'class MyClass:\n    def __init__(self, value):\n        self.value = value\n    def display(self):\n        print(self.value)'\nYou can create objects of this class and call its methods."]
+    },
+    {
+        "tag": "debugging",
+        "patterns": ["What is debugging", "How do I debug my code", "Explain debugging", "Tell me about debugging in Python"],
+        "responses": ["Debugging is the process of identifying and fixing errors in your code. In Python, you can use tools like 'print()' statements to check variable values or use debuggers like 'pdb' to step through your code line by line."]
+    },
+    {
+        "tag": "error_handling",
+        "patterns": ["What is error handling", "Explain exceptions in Python", "How do I handle errors in Python", "Tell me about try-except in Python"],
+        "responses": ["Error handling in Python is done using 'try' and 'except' blocks. For example:\n'try:\n    x = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')'. This way, your program can handle errors gracefully instead of crashing."]
+    },
+    {
+        "tag": "algorithms",
+        "patterns": ["What is an algorithm", "Explain algorithms", "Tell me about sorting algorithms", "What are common algorithms in programming"],
+        "responses": ["An algorithm is a step-by-step procedure for solving a problem. Common algorithms include sorting algorithms like bubble sort, quicksort, and search algorithms like binary search."]
+    },
+    {
+        "tag": "binary_search",
+        "patterns": ["What is binary search", "Explain binary search", "How does binary search work", "Tell me about binary search algorithm"],
+        "responses": ["Binary search is an efficient algorithm for finding an element in a sorted list. It repeatedly divides the search interval in half. The time complexity is O(log n)."]
+    },
+    {
+        "tag": "sorting_algorithms",
+        "patterns": ["What are sorting algorithms", "Tell me about sorting algorithms", "Explain bubble sort", "What is quicksort"],
+        "responses": ["Sorting algorithms arrange a list of elements in a specific order. For example, bubble sort compares adjacent elements and swaps them if they are in the wrong order. Quicksort divides the list into smaller parts and sorts them recursively."]
+    },
+    {
+        "tag": "recursion",
+        "patterns": ["What is recursion", "Explain recursion", "Tell me about recursion in Python", "How does recursion work"],
+        "responses": ["Recursion is when a function calls itself to solve smaller instances of a problem. For example, a factorial function can be defined as:\n'def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)'"]
+    },
+    {
+        "tag": "time_complexity",
+        "patterns": ["What is time complexity", "Explain time complexity", "Tell me about Big O notation", "What is Big O in algorithms"],
+        "responses": ["Time complexity is a way to describe the performance of an algorithm. Big O notation is used to express how the runtime of an algorithm grows relative to the input size. For example, O(n) means the time increases linearly with the input size."]
     }
 ]
